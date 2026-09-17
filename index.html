@@ -1,4 +1,110 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Hola Profesional!</title>
+    <!-- Importamos una fuente moderna de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Fondo con un degradado de colores vibrantes y modernos */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #ff758c 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Tarjeta con efecto de cristal (Glassmorphism) */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Estilo para simular una caja de código profesional */
+        .code-box {
+            background-color: #1e1e2e;
+            color: #cdd6f4;
+            font-family: 'Fira Code', monospace;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 1.1rem;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+            border-left: 4px solid #f38ba8;
+        }
+
+        /* Colores estilo sintaxis de programación (Syntax Highlighting) */
+        .tag { color: #89b4fa; }
+        .attr { color: #f9e2af; }
+        .string { color: #a6e3a1; }
+        .text-content { color: #fab387; font-weight: bold; }
+
+        /* Botón chulo con colorines */
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: linear-gradient(45deg, #ff758c, #ff7eb3);
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 117, 140, 0.6);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
 <body>
-  <h1>Hola</h1>
+
+    <div class="card">
+        <h1>¡Bienvenido/a!</h1>
+        
+        <!-- El código HTML literal que muestra el hola con colorines -->
+        <div class="code-box">
+            <span class="tag">&lt;h1</span> <span class="attr">class</span>=<span class="string">"saludo"</span><span class="tag">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-content">¡Hola, mundo!</span><br>
+            <span class="tag">&lt;/h1&gt;</span>
+        </div>
+
+        <a href="#" class="btn">¡Explorar más!</a>
+    </div>
+
 </body>
+</html>
